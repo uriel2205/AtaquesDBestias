@@ -1,0 +1,465 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.20f1 (41c4e627c95f) revision 4310246'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Enterprise; OS build 19044.1826; Version 2009; 64bit' Language: 'en' Physical Memory: 7113 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.20f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Uriel/KinstonCombat/AtaquesBestias
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53681
+Successfully changed project path to: C:/Users/Uriel/KinstonCombat/AtaquesBestias
+C:/Users/Uriel/KinstonCombat/AtaquesBestias
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 74.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.20f1 (41c4e627c95f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Uriel/KinstonCombat/AtaquesBestias/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Vega 8 Mobile Graphics (ID=0x15dd)
+    Vendor:   
+    VRAM:     3556 MB
+    Driver:   27.20.22002.57
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56240
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009517 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 52.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  9.397 seconds
+Domain Reload Profiling:
+	ReloadAssembly (9398ms)
+		BeginReloadAssembly (97ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (726ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (278ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (268ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (53ms)
+				BeforeProcessingInitializeOnLoad (16ms)
+				ProcessInitializeOnLoadAttributes (145ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.016041 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.762 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1763ms)
+		BeginReloadAssembly (246ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (1409ms)
+			LoadAssemblies (177ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (494ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (505ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (379ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1410 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.5 MB.
+System memory in use after: 67.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1850.
+Total: 5.677900 ms (FindLiveObjects: 0.246100 ms CreateObjectMapping: 0.068300 ms MarkObjects: 5.221000 ms  DeleteObjects: 0.140100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Audio/GameOver.wav
+  artifactKey: Guid(59ee8d97f82c0564a81267b3780c6f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Audio/GameOver.wav using Guid(59ee8d97f82c0564a81267b3780c6f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6946bf954f5cf30090a6c216e843f87e') in 0.232179 seconds 
+  Import took 0.239815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000586 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Material/Grass.mat
+  artifactKey: Guid(f9aa80336c30e3a45aa6ab0128710313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Material/Grass.mat using Guid(f9aa80336c30e3a45aa6ab0128710313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c97bfc55924928634474f319e37d457') in 0.119032 seconds 
+  Import took 0.123229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Audio/hit (1).wav
+  artifactKey: Guid(2330dad66c22d0344a25af02ebfe7498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Audio/hit (1).wav using Guid(2330dad66c22d0344a25af02ebfe7498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8722a80c679a73d01d42f5178ab3d16') in 0.027928 seconds 
+  Import took 0.033597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Audio/hit (5).wav
+  artifactKey: Guid(ca2f56fa7398e9e41bb5c53f068170c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Audio/hit (5).wav using Guid(ca2f56fa7398e9e41bb5c53f068170c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3ab668334e27c9476e967e1966dc1fa') in 0.031223 seconds 
+  Import took 0.036915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000559 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Material/Cube.mat
+  artifactKey: Guid(b865d3b5d7a6d564c86e797b031ba20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Material/Cube.mat using Guid(b865d3b5d7a6d564c86e797b031ba20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26fe6cb94f4d6d0676f4844331af0c2a') in 0.032141 seconds 
+  Import took 0.036127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Audio/Chop (2).wav
+  artifactKey: Guid(4b46598b9cbb1c8499462883d53314ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Audio/Chop (2).wav using Guid(4b46598b9cbb1c8499462883d53314ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f826e0618a81d4eea706b9d95903e114') in 0.025762 seconds 
+  Import took 0.030474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Audio/DieOut.wav
+  artifactKey: Guid(f47a7c02044deca459aa5974216ac233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Audio/DieOut.wav using Guid(f47a7c02044deca459aa5974216ac233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96199275c6f74a65280a09f78aa1a7d3') in 0.023937 seconds 
+  Import took 0.028888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Material/Wall.mat
+  artifactKey: Guid(c79e3e9af8971b047a27377d02601e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Material/Wall.mat using Guid(c79e3e9af8971b047a27377d02601e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db1e5778922d4e3aeca1e1e8616a97de') in 0.028076 seconds 
+  Import took 0.032449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Audio/hit (3).wav
+  artifactKey: Guid(238e6c3f79b2dac4191c95410c0be221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Audio/hit (3).wav using Guid(238e6c3f79b2dac4191c95410c0be221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c36f2656e12b134bbab0b5987af140b') in 0.023885 seconds 
+  Import took 0.029906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000471 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Audio/hit (4).wav
+  artifactKey: Guid(43213e9fac2cd7840b790842095756ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Audio/hit (4).wav using Guid(43213e9fac2cd7840b790842095756ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92308fbf88f96b4c81251d46a11ac50f') in 0.031141 seconds 
+  Import took 0.036331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Material/Ground.mat
+  artifactKey: Guid(a3af4854284f178479f136af610946db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Material/Ground.mat using Guid(a3af4854284f178479f136af610946db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e63660befd04bb32caa8280b1c48d19') in 0.023665 seconds 
+  Import took 0.029001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Audio/GameOver (2).wav
+  artifactKey: Guid(787e4e9bab729184580c1e37836f4c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Audio/GameOver (2).wav using Guid(787e4e9bab729184580c1e37836f4c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27bf2ffa68bfd2044d6d9e20b774195e') in 0.022569 seconds 
+  Import took 0.027416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Audio/BGM.mp3
+  artifactKey: Guid(744c94f801749473590d709133afb6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Audio/BGM.mp3 using Guid(744c94f801749473590d709133afb6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d30943ba202ae91271fd31b80f8237d') in 0.028522 seconds 
+  Import took 0.032577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Audio/Chop (3).wav
+  artifactKey: Guid(e1d1f81209691f64e8f745df5f463f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Audio/Chop (3).wav using Guid(e1d1f81209691f64e8f745df5f463f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3538561187012561731dc7b805005067') in 0.025156 seconds 
+  Import took 0.029396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Audio/Alert.wav
+  artifactKey: Guid(204e8a4a8ffd7e548931f6d4febd8340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Audio/Alert.wav using Guid(204e8a4a8ffd7e548931f6d4febd8340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3174d39de479373cd2b5270b7bcd279b') in 0.027328 seconds 
+  Import took 0.031411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Audio/ChangePlayer.wav
+  artifactKey: Guid(8ef08e9a6a96a654a910c63b33fb2968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Audio/ChangePlayer.wav using Guid(8ef08e9a6a96a654a910c63b33fb2968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '095ffa275c6cb9604d0360d90f8a9646') in 0.022889 seconds 
+  Import took 0.027483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000445 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Audio/Die.wav
+  artifactKey: Guid(4486b1bb83ca55243b4b616eec5acfb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Audio/Die.wav using Guid(4486b1bb83ca55243b4b616eec5acfb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e71d1acb0b5db1a63e46e7345836f498') in 0.023817 seconds 
+  Import took 0.029418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001157 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Material/Icon.png
+  artifactKey: Guid(d9b6221b7a5d9a04aac5fa333007c84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Material/Icon.png using Guid(d9b6221b7a5d9a04aac5fa333007c84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2bbae353e571e60183a4dc3b42a500c') in 0.103909 seconds 
+  Import took 0.108108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000433 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Model/AX_010.obj
+  artifactKey: Guid(0d15da47bb5b4994fbdcfb165f2c13e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Model/AX_010.obj using Guid(0d15da47bb5b4994fbdcfb165f2c13e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97826860cce8f24e1c18367900f2b78') in 0.141993 seconds 
+  Import took 0.146058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Audio/hit (2).wav
+  artifactKey: Guid(f006e8a126191854b89777b9e48d883f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Audio/hit (2).wav using Guid(f006e8a126191854b89777b9e48d883f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ceb1fd5c2a781d53b333088171bd367') in 0.028615 seconds 
+  Import took 0.033016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/Ataques de las bestias/ReadMe.txt
+  artifactKey: Guid(eefaa1e527814df49976526801cc7149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/ReadMe.txt using Guid(eefaa1e527814df49976526801cc7149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f20c3bd2d983a303a96c443adcaad5b2') in 0.024315 seconds 
+  Import took 0.030187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000457 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Audio/Chop (1).wav
+  artifactKey: Guid(f24cd3b947a302c4a8caa77a31a53db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Audio/Chop (1).wav using Guid(f24cd3b947a302c4a8caa77a31a53db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2d2fce9ef0cfcdc90bf7a4bca55903e') in 0.033343 seconds 
+  Import took 0.038025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 411.563444 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Animation/2L2H
+  artifactKey: Guid(7ae7ee9fb93107c429d961b26c63dcda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Animation/2L2H using Guid(7ae7ee9fb93107c429d961b26c63dcda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3e55f277e90c291bd4c2f7cecfe2573') in 0.011607 seconds 
+  Import took 0.015976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.489674 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Animation/2L2H/Attack1
+  artifactKey: Guid(9c29d618025a2374c820662e3dc20944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Animation/2L2H/Attack1 using Guid(9c29d618025a2374c820662e3dc20944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7081f6953448e4ba70a113f13e669f99') in 0.012511 seconds 
+  Import took 0.016183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.246346 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Animation/2L2H/Attack1/A
+  artifactKey: Guid(ef07cffcff737de4b9c0893a7ced1723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Animation/2L2H/Attack1/A using Guid(ef07cffcff737de4b9c0893a7ced1723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cf2cf27e457afe07522a5a396caa563') in 0.012838 seconds 
+  Import took 0.017577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.795621 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Animation
+  artifactKey: Guid(80c6580c9c09f61458cc4b7f9d2b4745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Animation using Guid(80c6580c9c09f61458cc4b7f9d2b4745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21eff3220b25b2c2a8328b3e369ce67f') in 0.013907 seconds 
+  Import took 0.018205 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.980993 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Animation/4L
+  artifactKey: Guid(5b2b74351a153bf45a2c26ece27c3de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Animation/4L using Guid(5b2b74351a153bf45a2c26ece27c3de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc852d88f447ec10b3952376a5b24bd2') in 0.011715 seconds 
+  Import took 0.016616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.362329 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Weapon/Axe.prefab
+  artifactKey: Guid(fb8a1205d9092464cbf9dee8951150a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Weapon/Axe.prefab using Guid(fb8a1205d9092464cbf9dee8951150a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a53f739e15b4f77b4c4cdfe2e73268a') in 0.062333 seconds 
+  Import took 0.067123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000891 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Weapon/Hand.prefab
+  artifactKey: Guid(7b095ddcb4d76384689f384b6de3a335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Weapon/Hand.prefab using Guid(7b095ddcb4d76384689f384b6de3a335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aabae4dd3da13939ad4ae5129a7f8aed') in 0.017209 seconds 
+  Import took 0.022345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000568 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Weapon/Shield.prefab
+  artifactKey: Guid(d411889fb018eba478a12566f0b364e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Weapon/Shield.prefab using Guid(d411889fb018eba478a12566f0b364e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96f4f2503877ab1cc6d8c85f10f4fb99') in 0.048204 seconds 
+  Import took 0.052194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000553 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Weapon/AxeShort.prefab
+  artifactKey: Guid(8143eaf99ea36a74db54f1ce674b163c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Weapon/AxeShort.prefab using Guid(8143eaf99ea36a74db54f1ce674b163c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7cd35ee6d4fcd6e1da95aef742288d5') in 0.051522 seconds 
+  Import took 0.056496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Ataques de las bestias/EscenaPrincipal/Weapon/AxeShortDouble.prefab
+  artifactKey: Guid(afa5760a764a87c4a8ffc750ee2a71fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ataques de las bestias/EscenaPrincipal/Weapon/AxeShortDouble.prefab using Guid(afa5760a764a87c4a8ffc750ee2a71fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fa214d384d42ef27e2b47145cb94b6e') in 0.043633 seconds 
+  Import took 0.047454 seconds .
+
+========================================================================
+Received Prepare
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Registering precompiled user dll's ...
+Registered in 0.007194 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.716 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1717ms)
+		BeginReloadAssembly (198ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (1405ms)
+			LoadAssemblies (145ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (461ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (490ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (372ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.82 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1393 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.7 MB.
+System memory in use after: 70.8 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 1892.
+Total: 5.990000 ms (FindLiveObjects: 0.346300 ms CreateObjectMapping: 0.121900 ms MarkObjects: 5.473900 ms  DeleteObjects: 0.044600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
