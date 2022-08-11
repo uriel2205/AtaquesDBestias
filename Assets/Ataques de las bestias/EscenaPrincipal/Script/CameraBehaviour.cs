@@ -17,7 +17,7 @@ public class CameraBehaviour : MonoBehaviour {
 	
 	private const float gap = 1f;
 
-
+	//Llamar metodo Awake
 	void Awake () {
 		Camera.main.orthographic = true;
 		CameraShaker = Camera.main.transform.parent;
@@ -45,7 +45,7 @@ public class CameraBehaviour : MonoBehaviour {
 		}
 	}
 
-
+	//Metodo CameraShake
 	public static void CameraShake () {
 		CameraShaker.localPosition = Random.insideUnitCircle * 0.5f;
 		DemoStage.Main.MainLight.color = new Color(0.6f, 0.3f, 0.3f);

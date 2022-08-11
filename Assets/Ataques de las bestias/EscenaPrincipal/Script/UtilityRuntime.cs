@@ -10,7 +10,7 @@ using UnityEngine;
 public struct FileUtil {
 
 
-
+	//ReadTex
 	public static string ReadText (string path) {
 		try {
 			StreamReader sr = File.OpenText(path);
@@ -22,7 +22,7 @@ public struct FileUtil {
 		}
 	}
 
-
+	//WriteText
 	public static void WriteText (string data, string path) {
 		try {
 			FileStream fs = new FileStream(path, FileMode.Create);
@@ -35,7 +35,7 @@ public struct FileUtil {
 		}
 	}
 
-
+	//FileToByte
 	public static byte[] FileToByte (string path) {
 		if (File.Exists(path)) {
 			byte[] bytes = null;
@@ -50,7 +50,7 @@ public struct FileUtil {
 		}
 	}
 
-
+	//ByteToFile
 	public static bool ByteToFile (byte[] bytes, string path) {
 		try {
 			string parentPath = new FileInfo(path).Directory.FullName;
@@ -65,7 +65,7 @@ public struct FileUtil {
 		}
 	}
 
-
+	//CreateFolder
 	public static void CreateFolder (string path) {
 		if (Directory.Exists(path))
 			return;
@@ -85,18 +85,18 @@ public struct FileUtil {
 public struct PathUtil {
 
 
-
+	//GetFullPath
 	public static string GetFullPath (string path) {
 		return new FileInfo(path).FullName;
 	}
 
-
+	//FixPath
 	public static string FixPath (string _path) {
 		return _path.Replace(@"\", @"/").Replace(@"//", @"/");
 	}
 
 
-
+	//CombinePaths
 	public static string CombinePaths (params string[] paths) {
 		string path = "";
 		for (int i = 0; i < paths.Length; i++) {
@@ -105,7 +105,7 @@ public struct PathUtil {
 		return FixPath(path);
 	}
 
-
+	//GetURL
 	public static string GetURL (string path) {
 		return (new Uri(path)).AbsoluteUri;
 	}
