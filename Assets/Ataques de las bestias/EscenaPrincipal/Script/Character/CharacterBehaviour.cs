@@ -510,7 +510,7 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	/// <summary>
-	/// Put a item in the character's hand.
+	/// Poner un objetos en las manos de un jugador..
 	/// </summary>
 	/// <param name="item">The item</param>
 	/// <param name="leftHand">In the left hand or not</param>
@@ -626,7 +626,7 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	/// <summary>
-	/// Stop attack immediately
+	/// Parar de atacar inmediantamente
 	/// </summary>
 	public void BreakAttack () {
 		if (Attacking) {
