@@ -13,6 +13,7 @@ public sealed class PlayerBehaviour : CharacterBehaviour {
 
 
 	[System.Serializable]
+	///CONFIGURACION DE LOS BOTONES DEL JUEGO
 	public struct PlayerInputKey {
 
 		public KeyCode Forward;
@@ -26,7 +27,7 @@ public sealed class PlayerBehaviour : CharacterBehaviour {
 		public KeyCode Dash;
 		public KeyCode Event;
 
-
+       //FUNCION DEL RESETEO
 		public void Reset () {
 			Forward = KeyCode.W;
 			Back = KeyCode.S;
@@ -67,12 +68,12 @@ public sealed class PlayerBehaviour : CharacterBehaviour {
 	#region -------- MSG --------
 
 
-
+    ///LLAMAR LOS BOTONES AL RESET
 	void Reset () {
 		inputKey.Reset();
 	}
 
-
+      //FUNCION DE ACTUALIZACION DE LOS BOTONES
 	protected override void Update () {
 
 		MovementUpdate();
@@ -88,7 +89,7 @@ public sealed class PlayerBehaviour : CharacterBehaviour {
 	}
 
 
-
+    //FUNCION DE LOS MOVIMIENTOS DEL PERSONAJES
 	void MovementUpdate () {
 
 		AimMove = Vector2.zero;
@@ -164,14 +165,14 @@ public sealed class PlayerBehaviour : CharacterBehaviour {
 
 	}
 
-
+     //FUNCION DEL ACTUALIZACION DE LOS SALTOS
 	void JumpUpdate () {
 		if (Input.GetKeyDown(inputKey.Jump)) {
 			base.Jump();
 		}
 	}
 
-	
+	//FUNCION DE LA ACTUALIZACION DE LOS ATAQUES
 	void AttackUpdate () {
 		if (Input.GetKey(inputKey.Attack1)) {
 			base.Attack1();
@@ -181,7 +182,7 @@ public sealed class PlayerBehaviour : CharacterBehaviour {
 		}
 	}
 
-
+   //FUNCION DE LA ACTUALIZACION DE LOS BRINCOS
 	void DashUpdate () {
 		if (Input.GetKeyDown(inputKey.Dash)) {
 			base.Dash();
