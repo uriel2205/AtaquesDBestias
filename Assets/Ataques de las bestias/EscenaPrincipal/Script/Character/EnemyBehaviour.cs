@@ -2,6 +2,7 @@
 using UnityEngine;
 using System.Collections;
 
+/// CLASES DEL COMPORTAMIENTO DEL ENEMIGO 
 public class EnemyBehaviour : CharacterBehaviour {
 
 	public Transform BloodCube, RedBloodCube;
@@ -17,7 +18,7 @@ public class EnemyBehaviour : CharacterBehaviour {
 	private float LastHurtTime = -100f;
 	private float LastCheckTime = -100f;
 
-
+    // FUNCION DEL COMIENZO
 	void Start () {
 		AimMove = Vector3.zero;
 		AimRotation = Quaternion.identity;
@@ -25,7 +26,7 @@ public class EnemyBehaviour : CharacterBehaviour {
 	}
 
 
-
+     //FUNCION DE LA ACTUALIZACION
 	protected override void Update () {
 
 		AimRotation = Quaternion.Lerp(AimRotation, Quaternion.Euler(
@@ -60,27 +61,27 @@ public class EnemyBehaviour : CharacterBehaviour {
 		base.Update();
 	}
 
-
+    ///CAMBIO DE DIRECCION
 	void ChangeDir () {
 		AimMove = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
 		base.RunIfMove = Random.value < 0.7f;
 	}
 
-
+   //FUNCION EN CASO DE QUE SE ESTRELLE
 	void DashMaybe () {
 		if (Random.value < 0.3f) {
 			base.Dash();
 		}
 	}
 
-
+    //FUNCION POR SI SALTA
 	void JumpMaybe () {
 		if (Random.value < 0.15f) {
 			base.Jump();
 		}
 	}
 
-
+    //FUNCION DEL DAÑO AL ENEMIGO
 	public void Hurt (float damage, Transform tf) {
 
 		transform.localScale = Vector3.one * 2f;
@@ -117,7 +118,7 @@ public class EnemyBehaviour : CharacterBehaviour {
 
 	}
 
-
+    //FUNCION DE LA VIDA Y LA SANGRE
 	private void Blood (Transform tf, Transform blood) {
 		GameObject bo = Instantiate<GameObject>(blood.gameObject);
 		bo.transform.position = transform.position + Vector3.up * 1.5f;
@@ -133,7 +134,7 @@ public class EnemyBehaviour : CharacterBehaviour {
 	}
 
 
-
+   //FUNCION DE LA MUERTE
 	public void Die (Transform tf) {
 
 		if (!Alive) {return;}

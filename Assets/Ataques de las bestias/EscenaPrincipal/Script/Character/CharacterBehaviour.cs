@@ -16,7 +16,7 @@ public class CharacterBehaviour : MonoBehaviour {
 
 	[System.Serializable]
 	public struct BehaviourSetting {
-
+		//tipo de personajes
 		public enum CharacterType {
 			_2L2H = 0,
 			_2L = 1,
@@ -26,10 +26,13 @@ public class CharacterBehaviour : MonoBehaviour {
 
 		public CharacterType characterType;
 		[Range(0.01f, 10f)]
+		//Velocidad de correr
 		public float RunSpeed;
 		[Range(0.01f, 10f)]
+		//velocidad de caminar
 		public float WalkSpeed;
 		[Range(0f, 30f)]
+		//El poder de brincar
 		public int JumpPower;
 		[Tooltip("How many times can this character jump before landing. ")]
 		[Range(0, 5)]
@@ -347,12 +350,12 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	/// <summary>
-	/// Move this character in current frame. 
-	/// Call in every frame to get a continuously action.
-	/// the movement is powered by rigidbody.
+	/// Mover este personaje en el mismo frame. 
+	/// Llame en cada cuadro para obtener una acción continua.
+	/// El movimiento es impulsado por rigidbody.
 	/// </summary>
-	/// <param name="dir">moving direction in world space</param>
-	/// <param name="speed">moving speed.(unit/s)</param>
+	/// <param name="dir">dirección de movimiento en el espacio mundial</param>
+	/// <param name="speed">velocidad de movimiento.(unidad/s)</param>
 	public void Move (Vector2 dir, float speed) {
 		if (Attacking || AniDash) {
 			return;
@@ -364,12 +367,12 @@ public class CharacterBehaviour : MonoBehaviour {
 	
 
 	/// <summary>
-	/// Move this character in current frame. 
-	/// Call in every frame to get a continuously action.
-	/// the movement is powered by rigidbody.
+	// Mover este personaje en el mismo frame. 
+	/// Llame en cada cuadro para obtener una acción continua.
+	/// El movimiento es impulsado por rigidbody.
 	/// </summary>
-	/// <param name="dir">moving direction relative to the MainCamera</param>
-	/// <param name="speed">moving speed.(unit/s)</param>
+	/// <param name="dir">dirección de movimiento relativa a la cámara principal</param>
+	/// <param name="speed">velocidad de movimiento.(unidad/s)</param>
 	public void MoveDependCamera (Vector2 dir, float speed) {
 		if (Attacking || AniDash) {
 			return;
@@ -384,7 +387,7 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	/// <summary>
-	/// Stop the character immediately
+	/// Detener al personaje inmediatamente
 	/// </summary>
 	public void Stop () {
 		Move(Vector2.zero, 0f);
@@ -392,45 +395,45 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	/// <summary>
-	/// Move this character as it's run-speed.
+	/// Mueve este personaje a su velocidad de carrera.
 	/// </summary>
-	/// <param name="dir">moving direction in world space</param>
+	/// <param name="dir">dirección de movimiento en el espacio mundial</param>
 	public void Run (Vector2 dir) {
 		Move(dir, behaviourSetting.RunSpeed);
 	}
 
 
 	/// <summary>
-	/// Move this character as it's run-speed.
+	/// Mueve este personaje a su velocidad de carrera.
 	/// </summary>
-	/// <param name="dir">moving direction relative to the MainCamera</param>
+	/// <param name="dir">dirección de movimiento relativa a la cámara principal</param>
 	public void RunDependCamera (Vector2 dir) {
 		MoveDependCamera(dir, behaviourSetting.RunSpeed);
 	}
 
 
 	/// <summary>
-	/// Move this character as it's walk-speed.
+	/// Mueve este personaje a su velocidad de caminata.
 	/// </summary>
-	/// <param name="dir">moving direction in world space</param>
+	/// <param name="dir">dirección de movimiento en el espacio mundial</param>
 	public void Walk (Vector2 dir) {
 		Move(dir, behaviourSetting.WalkSpeed);
 	}
 
 
-	/// <summary>
-	/// Move this character as it's walk-speed.
+	/// <summary>	
+/// Mueve este personaje a su velocidad de caminata.
 	/// </summary>
-	/// <param name="dir">moving direction relative to the MainCamera</param>
+	/// <param name="dir">dirección de movimiento relativa a la cámara principa</param>
 	public void WalkDependCamera (Vector2 dir) {
 		MoveDependCamera(dir, behaviourSetting.WalkSpeed);
 	}
 
 
 	/// <summary>
-	/// Rotate this character with given quaternion.
+/// Gira este carácter con el cuaternión dado.
 	/// </summary>
-	/// <param name="q">Rotate quaternion in world space</param>
+	/// <param name="q">Rotar cuaternión en el espacio mundial</param>
 	public void Rotate (Quaternion q) {
 		Vector3 v = q.eulerAngles;
 		transform.rotation = Quaternion.Euler(0f, v.y, 0f);
@@ -444,18 +447,18 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	/// <summary>
-	/// Rotate this character with given quaternion.
+/// Gira este carácter con el cuaternión dado.
 	/// </summary>
-	/// <param name="q">Rotate quaternion relative to the MainCamera</param>
+	/// <param name="q">Girar el cuaternión relativo a la MainCamera</param>
 	public void RotateDependCamera (Quaternion q) {
 		Rotate(q * Camera.main.transform.rotation);
 	}
 
 
 	/// <summary>
-	/// Let this character jump once.
+/// Deja que este personaje salte una vez.
 	/// </summary>
-	/// <param name="power">The speed in the begining of jumping.</param>
+	/// <param name="power">La velocidad en el comienzo del salto..</param>
 	public void Jump (float power) {
 		BreakAttack();
 		if (CurrentJumpCount < behaviourSetting.JumpCount) {
@@ -467,7 +470,7 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	/// <summary>
-	/// Short cut for Jump(1f).
+/// Atajo para Jump(1f).
 	/// </summary>
 	public void Jump () {
 		Jump(1f);
@@ -475,10 +478,10 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	/// <summary>
-	/// Put a item in the character's hand.
+/// Pon un objeto en la mano del personaje.
 	/// </summary>
-	/// <param name="item">The item</param>
-	/// <param name="leftHand">In the left hand or not</param>
+	/// <param name="item">el objeto</param>
+	/// <param name="leftHand">En la mano izquierda o no</param>
 	public void SetItem (Item item, bool leftHand) {
 		if (!behaviourSetting.HasHand) {
 			return;
@@ -512,8 +515,8 @@ public class CharacterBehaviour : MonoBehaviour {
 	/// <summary>
 	/// Poner un objetos en las manos de un jugador..
 	/// </summary>
-	/// <param name="item">The item</param>
-	/// <param name="leftHand">In the left hand or not</param>
+	/// <param name="item">TEl objeto</param>
+	/// <param name="leftHand">En la mano izquierda o no</param>
 	public void SetItem (Transform tf, bool leftHand) {
 		SetItem(tf ? tf.GetComponent<Item>() : null, leftHand);
 	}
@@ -521,9 +524,9 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	/// <summary>
-	/// Put a weapon in the character's hand.
+	///Poner un arma en la mano del personaje
 	/// </summary>
-	/// <param name="weapon">The weapon</param>
+	/// <param name="weapon">El arma</param>
 	public void SetItem (Weapon weapon) {
 		if (!behaviourSetting.HasHand) {
 			return;
@@ -564,9 +567,9 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	/// <summary>
-	/// Let the character attack once
+	/// Dejar el personaje ataque una vez
 	/// </summary>
-	/// <param name="id">1 or 2 corresponding to two kinds of attacks</param>
+	/// <param name="id">1 o 2 correspondientes a dos tipos de ataques</param>
 	/// <returns></returns>
 	public bool Attack (int id = 1) {
 
@@ -608,7 +611,7 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	/// <summary>
-	/// Short cut for Attack(1).
+	/// Atajo para Attack(1).
 	/// </summary>
 	/// <returns></returns>
 	public bool Attack1 () {
@@ -617,7 +620,7 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	/// <summary>
-	/// Short cut for Attack(2).
+		/// Atajo para Attack(2).
 	/// </summary>
 	/// <returns></returns>
 	public bool Attack2 () {
@@ -645,7 +648,7 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	/// <summary>
-	/// Let the character dash once. Will break attack.
+/// Deja que el personaje corra una vez. Romperá el ataque.
 	/// </summary>
 	public void Dash () {
 		BreakAttack();
@@ -663,7 +666,7 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	/// <summary>
-	/// Stop dash immediately.
+/// Detenga el guión inmediatamente.
 	/// </summary>
 	public void BreakDash () {
 		if (AniDash) {
@@ -676,7 +679,7 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	/// <summary>
-	/// Returns this character is on ground or not.
+/// Devuelve si este personaje está en el suelo o no.
 	/// </summary>
 	/// <returns></returns>
 	public bool IsGrounded () {
@@ -685,7 +688,7 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	/// <summary>
-	/// Get the current state of run/walk
+/// Obtener el estado actual de correr/caminar
 	/// </summary>
 	public bool RunIfMove {
 		get {
@@ -719,7 +722,7 @@ public class CharacterBehaviour : MonoBehaviour {
 		}
 	}
 
-
+   //FUNCION DEL AWAKE
 	protected virtual void Update () {
 
 		AniSpeed = new Vector2(AimVelocity.x, AimVelocity.z).magnitude / behaviourSetting.RunSpeed;
@@ -743,7 +746,7 @@ public class CharacterBehaviour : MonoBehaviour {
 		AniOnGround = onGround;
 	}
 
-
+    ///GOLPE DEL COLISIONADOR DEL CONTROL
 	protected virtual void OnControllerColliderHit (ControllerColliderHit hit) {
 		Rigidbody body = hit.collider.attachedRigidbody;
 		if (body == null || body.isKinematic)
@@ -760,7 +763,8 @@ public class CharacterBehaviour : MonoBehaviour {
 
 
 	#region -------- LGC --------
-
+     
+	 ///FUNCION DE LA INFORMACION DEL ARMA CARACTEWRISTICA COMO SU VELOCIDAD COMPORTAMIENTO DE ARMA, ETC...
 
 	private void SetWeaponInfo(WeaponBehaviour id, float minD, float maxD, float speed1, float speed2, float range){
 		if (behaviourSetting.HasHand) {
