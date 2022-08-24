@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-
+// Tipo de arma
 public enum WeaponType {
 	None = 0,
 	Hand = 1,
@@ -24,7 +24,7 @@ public enum WeaponType {
 	Sword,
 	SwordShort,
 }
-
+// Comportamiento de Armas
 public enum WeaponBehaviour {
 	None = 0,
 
@@ -47,7 +47,7 @@ public enum WeaponBehaviour {
 [System.Serializable]
 public struct WeaponInfo {
 
-
+	// Tipo de armas
 	public WeaponType Type {
 		get {
 			return _type;
@@ -59,37 +59,37 @@ public struct WeaponInfo {
 			return weaponBehaviour;
 		}
 	}
-
+	// Daño minimo
 	public float MinDamage {
 		get {
 			return minDamage;
 		}
 	}
-
+	// Maximo Daño
 	public float MaxDamage {
 		get {
 			return maxDamage;
 		}
 	}
-
+	//Daño
 	public float Damage {
 		get {
 			return Random.Range(minDamage, maxDamage);
 		}
 	}
-
+	// Velocidad de ataque
 	public float AttackSpeed1 {
 		get {
 			return attackSpeed1;
 		}
 	}
-
+	// Velocidad de ataque
 	public float AttackSpeed2 {
 		get {
 			return attackSpeed2;
 		}
 	}
-
+	//Ataque de rango
 	public float AttackRange {
 		get {
 			return attackRange;
@@ -117,7 +117,7 @@ public struct WeaponInfo {
 	[Range(0.01f, 100f)]
 	private float attackRange;
 
-
+	//Default
 	public void Default () {
 		_type = WeaponType.Hand;
 		weaponBehaviour = WeaponBehaviour.Hand;
@@ -135,7 +135,7 @@ public struct WeaponInfo {
 
 
 
-
+// Clase de armas
 public class Weapon : Item {
 
 	
@@ -171,7 +171,7 @@ public class Weapon : Item {
 	#region -------- MSG --------
 
 
-
+	//Durante el ataque
 	public void OnAttack1 (Transform tf) {
 
 		float h = 1f;
@@ -187,7 +187,7 @@ public class Weapon : Item {
 
 	}
 
-
+	//Durante el ataque
 	public void OnAttack2 (Transform tf) {
 
 		float h = 1f;
@@ -203,7 +203,7 @@ public class Weapon : Item {
 
 	}
 
-
+	//Parar ataque
 	public void StopAttack (Transform tf) {
 
 
@@ -212,7 +212,7 @@ public class Weapon : Item {
 
 	#endregion
 
-
+	// Tomar un ataque
 	private void MakeAttack (Transform tf, float h, float r, float d, bool muti = false) {
 		
 
