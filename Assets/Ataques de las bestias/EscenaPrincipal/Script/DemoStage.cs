@@ -4,7 +4,7 @@
 	using UnityEngine.UI;
 	using System.Collections;
 
-
+	// Clase de Estado Demo
 	public class DemoStage : MonoBehaviour {
 
 		public static DemoStage Main = null;
@@ -47,7 +47,7 @@
 		private AudioSource Audio;
 		private int combo = 0;
 
-
+		// Metodo Awake
 		void Awake () {
 			Main = this;
 			SpawnRange = new Vector2(MainGround.localScale.x * 0.45f, MainGround.localScale.z * 0.45f);
@@ -56,7 +56,7 @@
 			GameOverUI.gameObject.SetActive(true);
 		}
 
-
+		// Metodo De Inico de Juego
 		void GameStart () {
 
 			Playing = true;
@@ -98,7 +98,7 @@
 		}
 
 
-
+		//Metodo Actualizar
 		void Update () {
 
 			// Audio Lerp
@@ -205,7 +205,7 @@ Presiona <size=50><color=#cc3333ff>[ESC]</color></size> para continuar",
 		}
 
 
-
+		//Metodo para spawnear los enemigos
 		void SpawnEnemy () {
 			float id = Random.Range(0f, (float)Enemys.Length - 0.01f);
 			GameObject e = Instantiate<GameObject>(Enemys[(int)id].gameObject);
@@ -224,7 +224,7 @@ Presiona <size=50><color=#cc3333ff>[ESC]</color></size> para continuar",
 
 		}
 
-
+		// Metodo fresh Bar
 		public void FreshBar () {
 			HPBarIMG.transform.localScale = new Vector3((float)CurrentEnemyNum / (float)DeadEnd, 1f, 1f);
 			HPBarTXT.text = string.Format(
@@ -238,7 +238,7 @@ Presiona <size=50><color=#cc3333ff>[ESC]</color></size> para continuar",
 			_1.rectTransform.anchoredPosition = Vector2.down * 20f;
 		}
 
-
+		// Metdo agregar la numero de kill
 		public static void AddKillNum () {
 			Main.currentKillNum++;
 			if (Main.currentKillNum > Main.highScore) {
@@ -262,18 +262,18 @@ Presiona <size=50><color=#cc3333ff>[ESC]</color></size> para continuar",
 			Main._1.text = "<size=32><b>-</b></size> " + Main.combo.ToString();
 		}
 
-
+		// metodo de reproducir el sonido
 		public static void PlaySound (int id, float v = 1f) {
 			AudioSource.PlayClipAtPoint(DemoStage.Main.SFXs[id], Vector3.zero, v);
 		}
 
-
+		// Metodo para repodroducir el sonido de muerte
 		public void PlayDieoutSound () {
 			PlaySound(7);
 		}
 
 
-
+		// Open URL
 		public void OpenURL (string url) {
 			Application.OpenURL(url);
 		}
